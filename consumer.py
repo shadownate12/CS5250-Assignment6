@@ -32,8 +32,6 @@ def write_to_database(json_data, session, parsed_args, sorted_keys, object_key, 
         # Remove "otherAttributes" as it's no longer needed
         json_data.pop("otherAttributes", None)
 
-    dynamo_client = session.client('dynamodb', region_name="us-east-1")
-
     try:
         # Use put_item to write the item to the specified table
         #API expect data in dictionary format
@@ -41,17 +39,21 @@ def write_to_database(json_data, session, parsed_args, sorted_keys, object_key, 
         database = session.resource('dynamodb', region_name="us-east-1")
         table = database.Table(parsed_args.write_database)
     
-        response = table.put_item(Item = json_data)
-    
-        # response = dynamo_client.put_item(
-        # TableName=parsed_args.write_database,
-        # Item=json_data
-        #         )
+
         logger.info(f"Item written to DynamoDB table {parsed_args.write_database}")
         sorted_keys.remove(object_key)
         s3_client.delete_object(Bucket=parsed_args.read_bucket, Key=object_key)
     except Exception as e:
         logger.error("Failed to write to DynamoDB: %s", e)
+
+def write_to_s3(parsed_args, widget_key, widget_json, s3_client, object_key, sorted_keys):
+    try:
+        s3_client.put_object(Bucket=parsed_args.write_bucket, Key=widget_key, Body=widget_json)
+        logger.info(f"Stored Widget in {parsed_args.write_bucket} with key {widget_key}.")
+        sorted_keys.remove(object_key)
+        s3_client.delete_object(Bucket=parsed_args.read_bucket, Key=object_key)
+    except Exception as e:
+        logger.error("Failed to store Widget: %s", e)
                                     
 
 # Set up logging configuration
@@ -70,9 +72,6 @@ def main(args):
 
     # List all buckets
     b = s3_client.list_buckets()
-    bucket_2 = b['Buckets'][1]  
-    bucket_3 = b['Buckets'][2]  
-
     parsed_args = parser.parse_args(args)
     logger.info("Script started with arguments: %s", parsed_args)
 
@@ -86,7 +85,7 @@ def main(args):
         while True:
             # List objects in the specified bucket
             '''response = s3_client.list_objects_v2(Bucket=bucket_2['Name'])'''
-            response = s3_client.list_objects_v2(Bucket = parsed_args.read_bucket)
+            response = s3_client.list_objects_v2(Bucket = parsed_args.read_bucket, MaxKeys = 1)
 
 
             if 'Contents' in response and len(response['Contents']) > 0:
@@ -120,14 +119,7 @@ def main(args):
 
                             #Upload to bucket
                             if parsed_args.write_bucket != None:
-                                try:
-                                    s3_client.put_object(Bucket=parsed_args.write_bucket, Key=widget_key, Body=widget_json)
-                                    logger.info(f"Stored Widget in {parsed_args.write_bucket} with key {widget_key}.")
-                                    sorted_keys.remove(object_key)
-                                    s3_client.delete_object(Bucket=parsed_args.read_bucket, Key=object_key)
-
-                                except Exception as e:
-                                    logger.error("Failed to store Widget: %s", e)
+                                write_to_s3(parsed_args, widget_key, widget_json, s3_client, object_key, sorted_keys)
 
                             if parsed_args.write_database != None:
                                 write_to_database(json_data, session, parsed_args, sorted_keys, object_key, s3_client)

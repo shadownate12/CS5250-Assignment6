@@ -9,3 +9,54 @@
 2024-10-28 21:58:53,199 - INFO - Item written to DynamoDB table widgets
 2024-10-28 21:58:53,890 - INFO - Item written to DynamoDB table widgets
 2024-10-28 21:58:54,746 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:54,545 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:07:55,442 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:07:55,442 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:07:56,072 - INFO - Updated Sorted Keys: 55
+2024-10-28 22:07:56,305 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:56,519 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:56,720 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:56,901 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:57,085 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:57,279 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:57,488 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:57,679 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:57,863 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:58,054 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:58,273 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:58,526 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:58,746 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:58,934 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:59,118 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:59,599 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:07:59,804 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:00,115 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:00,507 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:00,692 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:01,073 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:01,354 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:01,560 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:01,738 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:02,047 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:03,337 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:03,526 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:03,715 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:03,926 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:04,110 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:04,296 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:04,477 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:04,664 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:08:04,951 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:14:34,646 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:14:35,584 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:14:35,584 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:14:36,141 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:14:36,335 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:14:37,489 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:14:37,574 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:14:38,748 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:14:38,894 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:14:40,053 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:14:40,174 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:14:41,328 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:14:41,440 - INFO - Item written to DynamoDB table widgets
