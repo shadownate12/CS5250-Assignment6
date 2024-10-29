@@ -1,0 +1,11 @@
+2024-10-28 21:58:48,150 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 21:58:49,068 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 21:58:49,068 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 21:58:49,631 - INFO - Updated Sorted Keys: 62
+2024-10-28 21:58:50,411 - INFO - Item written to DynamoDB table widgets
+2024-10-28 21:58:51,125 - INFO - Item written to DynamoDB table widgets
+2024-10-28 21:58:51,811 - INFO - Item written to DynamoDB table widgets
+2024-10-28 21:58:52,479 - INFO - Item written to DynamoDB table widgets
+2024-10-28 21:58:53,199 - INFO - Item written to DynamoDB table widgets
+2024-10-28 21:58:53,890 - INFO - Item written to DynamoDB table widgets
+2024-10-28 21:58:54,746 - INFO - Item written to DynamoDB table widgets
