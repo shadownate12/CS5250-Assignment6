@@ -60,3 +60,98 @@
 2024-10-28 22:14:40,174 - INFO - Item written to DynamoDB table widgets
 2024-10-28 22:14:41,328 - INFO - Updated Sorted Keys: 1
 2024-10-28 22:14:41,440 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:20:46,163 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:20:47,002 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket='usu-cs5250-shadownate12-web', write_database=None)
+2024-10-28 22:20:47,002 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:20:47,673 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:20:48,887 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/sue-smith/93ab7ccf-fb0c-4981-8e70-53137f8a98a8.
+2024-10-28 22:20:50,060 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:20:50,389 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/henry-hops/a129a8d1-c69b-4908-9954-829b9c77afee.
+2024-10-28 22:20:51,669 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:21:43,235 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:21:44,219 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:21:44,219 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:21:44,982 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:22:06,186 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:22:07,201 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:22:07,201 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:22:08,247 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:25:20,612 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:25:21,456 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:25:21,456 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:25:22,034 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:26:42,053 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:26:42,991 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:26:42,991 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:26:43,630 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:27:09,534 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:27:10,667 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:27:10,667 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:27:11,524 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:27:46,570 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:27:47,427 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:27:47,427 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:27:48,126 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:28:11,998 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:28:13,040 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:28:13,040 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:28:13,682 - INFO - Updated Sorted Keys: 1
+2024-10-28 22:28:24,974 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:28:26,068 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:28:26,068 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:28:26,799 - INFO - Updated Sorted Keys: 56
+2024-10-28 22:28:27,302 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:27,757 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:28,055 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:28,366 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:28,660 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:28,944 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:29,150 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:29,343 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:29,536 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:29,730 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:29,934 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:30,129 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:30,344 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:30,681 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:30,871 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:31,079 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:31,283 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:31,474 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:31,662 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:31,965 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:32,158 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:32,348 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:32,568 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:32,859 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:28:33,056 - INFO - Item written to DynamoDB table widgets
+2024-10-28 22:29:21,581 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:29:22,658 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket=None, write_database='widgets')
+2024-10-28 22:29:22,658 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:29:23,449 - INFO - Updated Sorted Keys: 31
+2024-10-28 22:29:24,192 - INFO - Item written to DynamoDB table widgets with key 1730174319832
+2024-10-28 22:29:24,498 - INFO - Item written to DynamoDB table widgets with key 1730174321251
+2024-10-28 22:29:24,751 - INFO - Item written to DynamoDB table widgets with key 1730175903572
+2024-10-28 22:29:24,934 - INFO - Item written to DynamoDB table widgets with key 1730175904221
+2024-10-28 22:29:25,138 - INFO - Item written to DynamoDB table widgets with key 1730175904798
+2024-10-28 22:29:25,380 - INFO - Item written to DynamoDB table widgets with key 1730175905344
+2024-10-28 22:29:25,561 - INFO - Item written to DynamoDB table widgets with key 1730175905872
+2024-10-28 22:29:25,752 - INFO - Item written to DynamoDB table widgets with key 1730175906523
+2024-10-28 22:29:25,940 - INFO - Item written to DynamoDB table widgets with key 1730175907093
+2024-10-28 22:29:26,192 - INFO - Item written to DynamoDB table widgets with key 1730175907682
+2024-10-28 22:29:26,375 - INFO - Item written to DynamoDB table widgets with key 1730175908296
+2024-10-28 22:29:26,573 - INFO - Item written to DynamoDB table widgets with key 1730175908866
+2024-10-28 22:29:26,846 - INFO - Item written to DynamoDB table widgets with key 1730175909439
+2024-10-28 22:29:48,198 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-10-28 22:29:49,137 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket='usu-cs5250-shadownate12-web', write_database=None)
+2024-10-28 22:29:49,137 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-10-28 22:29:49,702 - INFO - Updated Sorted Keys: 18
+2024-10-28 22:29:51,328 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/henry-hops/c6c5e87e-dd58-48bc-8728-b9539d8275c3.
+2024-10-28 22:29:51,667 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/john-jones/1af49f83-05a2-4ff7-8340-37d4af27bcb4.
+2024-10-28 22:29:52,003 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/john-jones/414ddaa9-0f91-406e-84e2-ba49f10b795f.
+2024-10-28 22:29:52,339 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/john-jones/b40d564e-a96a-4ea2-8f76-8da59dd3d894.
+2024-10-28 22:29:52,686 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/henry-hops/dd797c46-ffc2-415e-a4cb-53852a8da532.
+2024-10-28 22:29:54,845 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/mary-matthews/2d205a5e-422a-4170-9927-8b91d9dcc475.
+2024-10-28 22:29:55,181 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/sue-smith/ea0401bd-5ccb-4728-b869-03953cebf78e.
+2024-10-28 22:29:55,536 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/sue-smith/eff1972d-27bf-4468-9f17-162a6358a688.
+2024-10-28 22:29:57,676 - INFO - Stored Widget in usu-cs5250-shadownate12-web with key widgets/sue-smith/32b1bc6e-7651-4fff-98eb-4a6be41ade17.

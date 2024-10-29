@@ -40,7 +40,7 @@ def write_to_database(json_data, session, parsed_args, sorted_keys, object_key, 
         table = database.Table(parsed_args.write_database)
     
 
-        logger.info(f"Item written to DynamoDB table {parsed_args.write_database}")
+        logger.info(f"Item written to DynamoDB table {parsed_args.write_database} with key {object_key}")
         sorted_keys.remove(object_key)
         s3_client.delete_object(Bucket=parsed_args.read_bucket, Key=object_key)
     except Exception as e:
@@ -85,7 +85,7 @@ def main(args):
         while True:
             # List objects in the specified bucket
             '''response = s3_client.list_objects_v2(Bucket=bucket_2['Name'])'''
-            response = s3_client.list_objects_v2(Bucket = parsed_args.read_bucket, MaxKeys = 1)
+            response = s3_client.list_objects_v2(Bucket = parsed_args.read_bucket)
 
 
             if 'Contents' in response and len(response['Contents']) > 0:
