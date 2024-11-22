@@ -124,9 +124,68 @@ def main(args):
 
                             if parsed_args.write_database != None:
                                 write_to_database(json_data, session, parsed_args, sorted_keys, object_key, s3_client)
+                        
+                        elif json_data["type"] == "update":
+                            # Construct the widget key using owner and widgetId
+                            owner = json_data.get("owner", "").replace(" ", "-").lower()
+                            widget_id = json_data.get("widgetId")
+                            
+                            if not owner or not widget_id:
+                                logger.warning("Update request missing required fields: 'owner' or 'widgetId'.")
+                                continue  # Skip this request
+                                # Remove the prefix if present
+                            if widget_id.startswith("widgets/"):
+                                widget_id = widget_id.split("/", 2)[-1]  # Keeps only the part after the second '/'
+                            widget_key = f"widgets/{owner}/{widget_id}"
 
 
+                            try:
+                                # Fetch the current widget data from S3
+                                response = s3_client.get_object(Bucket=parsed_args.write_bucket, Key=widget_key)
+                                existing_data = json.loads(response['Body'].read().decode('utf-8'))
 
+                                # Update fields in the existing data
+                                if "description" in json_data:
+                                    existing_data["description"] = json_data["description"]
+
+                                # Add or update otherAttributes
+                                for attribute in json_data.get("otherAttributes", []):
+                                    name = attribute.get("name")
+                                    value = attribute.get("value")
+                                    if name:  # Ensure valid attribute name
+                                        existing_data[name] = value
+
+                                # Save the updated data back to S3
+                                updated_json = json.dumps(existing_data)
+
+                                s3_client.put_object(Bucket=parsed_args.write_bucket, Key=widget_key, Body=updated_json)
+                                logger.info(f"Updated widget with key: {widget_key}")
+                                s3_client.delete_object(Bucket=parsed_args.read_bucket, Key=object_key)
+
+                            except s3_client.exceptions.NoSuchKey:
+                                logger.warning(f"Widget with key {widget_key} not found. Cannot update.")
+                                s3_client.delete_object(Bucket=parsed_args.read_bucket, Key=object_key)
+                            except Exception as e:
+                                logger.error(f"Failed to update widget: {e}")
+
+
+                        elif json_data["type"] == "delete":
+                            owner = json_data.get("owner", "").replace(" ", "-").lower()
+                            widget_id = json_data.get("widgetId")
+
+                            if not owner or not widget_id:
+                                logger.warning("Update request missing required fields: 'owner' or 'widgetId'.")
+                            widget_key = f"widgets/{owner}/{widget_id}"
+                            if not widget_key:
+                                logger.warning("Delete request missing widgetKey.")
+                                return
+                            try:
+                                s3_client.delete_object(Bucket=parsed_args.write_bucket, Key=widget_key)
+                                logger.info(f"Deleted widget with key: {widget_key}")
+                                s3_client.delete_object(Bucket=parsed_args.read_bucket, Key=object_key)
+                            except Exception as e:
+                                logger.error("Failed to delete widget : %s", e)
+                                s3_client.delete_object(Bucket=parsed_args.read_bucket, Key=object_key)
 
                     except json.JSONDecodeError:
                         logger.warning("Invalid JSON content in object: %s", object_key)
