@@ -13,6 +13,8 @@ parser.add_argument('-wb', '--write_bucket', type=str, help='Specify the S3 buck
 
 parser.add_argument('-dwt', '--write_database', type=str, help='Specify the database to write to.')
 
+parser.add_argument('-rq', '--read_queue', type=str, help='Specify the SQS Queue to read from.')
+
 def retrieve_and_sort(response):
     # Sort the keys
     object_keys = [obj['Key'] for obj in response['Contents']]
@@ -71,7 +73,6 @@ def main(args):
     s3_client = session.client('s3')
 
     # List all buckets
-    b = s3_client.list_buckets()
     parsed_args = parser.parse_args(args)
     logger.info("Script started with arguments: %s", parsed_args)
 
@@ -132,13 +133,16 @@ def main(args):
                         logger.debug("Object content: %s", object_content)
 
                     # Remove the processed key from sorted_keys
-                    
-
             else:
                 logger.info("No objects found in bucket. Waiting for new requests...")
 
             # Wait for 100 ms before trying again
             time.sleep(1)
+            
+    #Similar process for a queue
+    elif parsed_args.read_queue:
+        pass
+        
 
 if __name__ == "__main__":
     main(sys.argv[1:])
