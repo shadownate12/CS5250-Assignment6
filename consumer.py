@@ -200,7 +200,37 @@ def main(args):
             
     #Similar process for a queue
     elif parsed_args.read_queue:
-        pass
+        sqs = boto3.client('sqs', region_name="us-east-1")
+
+        queue_url = "https://sqs.us-east-1.amazonaws.com/463154338127/cs5250-requests"
+
+        try:
+            # Receive message from SQS queue
+            response = sqs.receive_message(
+                QueueUrl=queue_url,
+                MaxNumberOfMessages=1,  
+                WaitTimeSeconds=10,     # Long polling 
+                VisibilityTimeout=30   
+            )
+
+            # Check if there are messages in the response
+            if 'Messages' in response:
+                for message in response['Messages']:
+                    print("Message ID:", message['MessageId'])
+                    print("Body:", message['Body'])
+
+                    # After processing the message, delete it
+                    sqs.delete_message(
+                        QueueUrl=queue_url,
+                        ReceiptHandle=message['ReceiptHandle']
+                    )
+                    logger.info("Message deleted successfully.")
+            else:
+                logger.info("No messages available.")
+
+        except Exception as e:
+            logger.error("Error receiving or processing messages:", e)
+            
         
 
 if __name__ == "__main__":

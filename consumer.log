@@ -2,3 +2,30 @@
 2024-11-22 14:43:39,812 - INFO - No objects found in bucket. Waiting for new requests...
 2024-11-22 14:43:40,891 - INFO - No objects found in bucket. Waiting for new requests...
 2024-11-22 14:43:41,973 - INFO - No objects found in bucket. Waiting for new requests...
+2024-11-22 20:57:59,678 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 20:57:59,926 - INFO - Script started with arguments: Namespace(read_bucket='usu-cs5250-shadownate12-requests', write_bucket='usu-cs5250-shadownate12-web', write_database=None, read_queue=None)
+2024-11-22 20:57:59,926 - INFO - Reading S3 Bucket: usu-cs5250-shadownate12-requests
+2024-11-22 20:58:00,873 - INFO - No objects found in bucket. Waiting for new requests...
+2024-11-22 20:58:01,988 - INFO - No objects found in bucket. Waiting for new requests...
+2024-11-22 20:58:03,198 - INFO - No objects found in bucket. Waiting for new requests...
+2024-11-22 20:58:04,285 - INFO - No objects found in bucket. Waiting for new requests...
+2024-11-22 20:58:05,368 - INFO - No objects found in bucket. Waiting for new requests...
+2024-11-22 21:01:50,603 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:01:53,683 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:01:53,874 - INFO - Script started with arguments: Namespace(read_bucket=None, write_bucket=None, write_database=None, read_queue='d')
+2024-11-22 21:01:53,882 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:02:49,649 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:02:49,872 - INFO - Script started with arguments: Namespace(read_bucket=None, write_bucket=None, write_database=None, read_queue='d')
+2024-11-22 21:02:49,881 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:03:01,178 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:03:01,370 - INFO - Script started with arguments: Namespace(read_bucket=None, write_bucket=None, write_database=None, read_queue='d')
+2024-11-22 21:03:01,378 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:03:10,553 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:03:10,752 - INFO - Script started with arguments: Namespace(read_bucket=None, write_bucket=None, write_database=None, read_queue='d')
+2024-11-22 21:03:10,761 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:03:56,192 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:03:56,391 - INFO - Script started with arguments: Namespace(read_bucket=None, write_bucket=None, write_database=None, read_queue='d')
+2024-11-22 21:03:56,400 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:04:17,888 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-22 21:04:18,086 - INFO - Script started with arguments: Namespace(read_bucket=None, write_bucket=None, write_database=None, read_queue='d')
+2024-11-22 21:04:18,094 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
